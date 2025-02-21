@@ -11,16 +11,17 @@ import { TourPackages } from "../constant";
 import Tourcard from "../Components/Tourcard";
 
 const Home = () => {
+ // const [CityType, setCityType] = useState("All");
+  //const [buttonClicked, setbuttonClicked] = useState(0);
   const [cateGory, setCageGory] = useState("All");
-  return (
+  
+   return (
     <div>
       <Navbar />
       <HomeHero />
       <TredLocation />
-
       <TourPackagesText cateGory={cateGory} setCageGory={setCageGory} />
-      <Tourcard cateGory={cateGory} start={0} end={3} />
-
+      <Tourcard  cateGory={cateGory} setCageGory={setCageGory}  start={0} end={3}/> 
       <Testimonials />
       <FooterTop img={Footerpic} text="Enjoy the best travel experience now" />
       <Footer />
