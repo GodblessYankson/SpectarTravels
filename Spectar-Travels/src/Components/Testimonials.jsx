@@ -1,17 +1,16 @@
 import React, { useState } from "react";
-import {
-  TestPic,
-  
-  testStar,
-  testicon,
-  
-} from "../assets";
+import { TestPic, testStar, testicon, } from "../assets";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-const Testimonials = () => {
-  const [showTestimonials, setshowTestimonials] = useState(false);
-  const handleShow = (index) => {
-    setshowTestimonials((prevIndex) => (prevIndex === index ? false : index));
-  };
+const Testimonials = ({clicked, handleClicked}) => {
+  const [showTestimonials, setshowTestimonials] = useState(false)
+
+  const handleshow = () => {
+    setshowTestimonials(!showTestimonials)
+  }
+  const handleSlides = () => {
+    handleshow(!showTestimonials)
+    
+  } 
   return (
     <div className="w-full">
       <div className="max-w-[1240px] mx-auto px-4">
@@ -26,22 +25,22 @@ const Testimonials = () => {
           <div className="flex flex-col justify-center lg:space-y-6 ">
             <div className="float-right flex justify-end gap-6">
               <button
-                onClick={() => handleShow(0)}
+                onClick={handleClicked}
                 className={`border border-slate-500 px-4 py-3 rounded-full ${
-                  showTestimonials ? "bg-white" : "bg-blue-600 text-white"
+                  clicked ? "bg-blue-600 text-white" : "bg-white"
                 }`}>
                 <IoIosArrowBack size={30} />
               </button>
               <button
-                onClick={() => handleShow(1)}
+                onClick={handleClicked}
                 className={`border border-slate-500 px-4 py-3 rounded-full ${
-                    showTestimonials ? "bg-blue-600 text-white" : "bg-white"
+                    !clicked ? "bg-blue-600 text-white" : "bg-white"
                   }`}>
                 <IoIosArrowForward size={30} />
               </button>
             </div>
             <img src={testStar} alt="star" />
-            {!showTestimonials ? (
+            {clicked ? (
               <div>
                 <p className="font-bold text-3xl ">"We were extremely satisfied with the experience"</p>
                 <p className="font-semibold text-xl text-[#8A8F96] ">
@@ -69,6 +68,7 @@ const Testimonials = () => {
             </div>
           </div>
         </div>
+        
       </div>
     </div>
   );

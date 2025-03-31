@@ -37,10 +37,10 @@ useEffect(() => {
     <div className={`fixed top-0 z-10 w-full sm:p-4 transition-all duration-300 ${isScrolled ? 'bg-white' : 'bg-transparent'} `}>
         <div className=' w-full md:max-w-[1240px] sm:mx-auto flex justify-between items-center py-4 px-6'>
             <div className='flex items-center gap-4'>
-                <img src={navIcon} className='h-[50px] z-10' alt="nav icon" />
-                <p className='font-bold text-2xl '>Spectar Travels</p>
+                <img src={navIcon} className='h-[30px] md:h-[50px] z-10' alt="nav icon" />
+                <p className='font-bold text-xl md:text-2xl'>Spectar Travels</p>
             </div>
-            <ul className='hidden md:flex justify-between items-center underline-none gap-10 '>
+            <ul className='hidden lg:flex justify-between items-center underline-none gap-10 '>
                 <li className='font-semibold text-xl hover:text-[#2B70EF]'>
                   
                     <Link to="/">Home</Link>
@@ -62,7 +62,12 @@ useEffect(() => {
                     <Link to="/Visa">Visa</Link>
                 </li>
             </ul>
-            <div className='flex flex-col md:hidden'>
+            <div className='hidden lg:flex bg-blue-600  px-4 py-3   items-center rounded-3xl'>
+                <Link to="/contact" className=" ">
+                   <p className="font-semibold text-lg  text-white">Contact Us</p>
+                </Link>
+            </div>
+            <div className='flex flex-col lg:hidden'>
                 <div onClick={handleToogle}>
                   {!toogle ?  <IoMenuSharp size={40} /> : <IoClose size={40} />}
                 </div>
@@ -72,37 +77,33 @@ useEffect(() => {
 
                 </div>
                 <li className='font-semibold text-xl text-center border-b border-slate-400 py-2'>
-                   {/*  <a href="">
-                        Home
-                    </a> */}
+                 
                     <Link to="/">Home</Link>
                 </li>
                 <li className='font-semibold text-xl  text-center border-b border-slate-400 py-2'>
-                  {/*   <a href="">
-                        About
-                    </a> */}
+                
                     <Link to="/about">About</Link>
                 </li>
                 <li className='font-semibold text-xl  text-center border-b border-slate-400 py-2'>
-                    {/* <a href="">
-                        Services
-                    </a> */}
+                   
                     <Link to="/services">Services</Link>
                 </li>
                 <li className='font-semibold text-xl text-center border-b border-slate-400 py-2'>
-                   {/*  <a href="">
-                        Tour
-                    </a> */}
+                  
                     <Link to="/tour">Tour</Link>
                 </li>
-                <li className='font-semibold text-xl  text-center border-b border-slate-400 py-2'>
-                  {/*   <a href="">
-                        Visa
-                    </a> */}
-                    <Link to="/visa"></Link>
+                <li className='font-semibold text-xl text-center border-b border-slate-400 py-2'>
+                  
+                    <Link to="/visa">Visa</Link>
                 </li>
+                <li className='bg-blue-600 font-semibold text-xl text-white rounded-2xl  text-center border-b border-slate-400 py-2'>
+                  
+                    <Link to="/contact">Contact Us</Link>
+                </li>
+                
             </ul>
             </div>
+           
         </div>
     </div>
   )

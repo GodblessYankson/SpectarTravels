@@ -7,8 +7,11 @@ import Tour from '../Page/Tour'
 import Visa from '../Page/Visa'
 import LocationDetails from '../Components/LocationDetails'
 import NotFound from '../Components/NotFound'
-
-
+import ContactUs from '../Page/ContactUs'
+import VisaBooking from '../Components/VisaBooking'
+import Bookings from '../Components/Bookings'
+import Trials from '../Components/Trials'
+import Board from '../Components/Board'
 const AppRoutes = () => {
   return (
     <div>
@@ -18,6 +21,11 @@ const AppRoutes = () => {
             <Route exact path="/services" element={<Services />} />
             <Route exact path="/tour" element={<Tour />} />
             <Route exact path="/visa" element={<Visa />} />
+            <Route exact path="/contact" element={<ContactUs />} />
+            <Route exact path="/visabooking" element={<VisaBooking />} />
+            <Route exact path="/booking" element={<Bookings />} />
+            <Route exact path="/trial" element={<Trials />} />
+            <Route exact path="/tictac" element={<Board />} />
             <Route exact path='/tour/:id' element={<LocationDetails />} />
             
             <Route path="*" element={<NotFound />} />

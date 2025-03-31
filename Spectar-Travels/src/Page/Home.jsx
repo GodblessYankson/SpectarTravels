@@ -7,7 +7,6 @@ import { FooterTop } from "../Components/FooterImg";
 import { Footerpic } from "../assets";
 import Footer from "../Components/Footer";
 import { TourPackagesText } from "../Components/Tourcard";
-import { TourPackages } from "../constant";
 import Tourcard from "../Components/Tourcard";
 
 const Home = () => {

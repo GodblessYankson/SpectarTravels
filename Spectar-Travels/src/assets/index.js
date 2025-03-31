@@ -33,8 +33,28 @@ import tourItaly from "./tourItaly.png"
 import tourEgypt from "./tourEgypt.png"
 import clock from "./clock.png"
 import destination from "./destination.png"
+import AboutUs from "./AboutUs.png"
+import Aboutpic from "./Aboutpic.png"
+import Aboutshade from "./Aboutshade.png"
+import AboutTarget from "./Abouttarget.png"
+import Teampic1 from "./Teampic1.png"
+import Teampic2 from "./Teampic2.png"
+import Tourpic from "./Tourpic.png"
+import Visapic from "./Visapic.png"
+import Visaimg from "./Visaimg.png"
+import VisaRequirementIcon from "./VisaRequirementIcon.png"
+import ContactImg from "./ContactImg.png"
+import MapImg from "./MapImg.png"
+import PicDetailsImg from "./PicDetailsImg.png"
 
 
-
-
-export { navIcon, TourArrow, NAVICONS, Hero, HomeCalendar, HomeDest, Search, Dubai, Ghana, Greece, viewIcon, TestPic, testStar, testicon, testleftarrow, TravelPlan, visaAssist, FamilyVac, GroupTravel, BussinesTravel, Servicespic, Footerpic, facebook, Youtube, Twitter, Linkedin, instagram, tourDubai, tourEgypt, tourItaly, tourSingapore, tourGhana, tourKenya, clock, destination } 
+export { navIcon, TourArrow, NAVICONS, Hero, HomeCalendar, HomeDest, Search,
+     Dubai, Ghana, Greece, viewIcon, TestPic, testStar,
+      testicon, testleftarrow, TravelPlan, visaAssist,
+       FamilyVac, GroupTravel, BussinesTravel, Servicespic, Footerpic,
+        facebook, Youtube, Twitter, Linkedin, instagram,
+         tourDubai, tourEgypt, tourItaly, tourSingapore, tourGhana, 
+         tourKenya, clock, destination, AboutUs, Aboutpic, AboutTarget, Aboutshade,
+        Teampic1, Teampic2, Tourpic, Visapic, Visaimg, VisaRequirementIcon, ContactImg,
+          MapImg, PicDetailsImg
+     } 

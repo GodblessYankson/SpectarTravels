@@ -1,4 +1,4 @@
-import { Greece, Ghana, TourArrow, Dubai, HomeDest, HomeCalendar, Search, tourDubai, tourKenya, tourSingapore, tourGhana, tourEgypt, tourItaly, clock, destination } from "../assets"
+import { Greece, Ghana, TourArrow, Dubai, HomeDest, HomeCalendar, Search, tourDubai, tourKenya, tourSingapore, tourGhana, tourEgypt, tourItaly, clock, destination, Teampic1, Teampic2} from "../assets"
 export const tour = [
     {
         id: 1,
@@ -110,4 +110,87 @@ export const TourPackages = [
         clockIcon: clock       
     }
     
+];
+export const Team = [
+{
+    id: 0,
+    name: "Godbless Yankson",
+    jobTitle: "CEO",
+    src: Teampic1
+},
+{
+    id: 1,
+    name: "Osborn Edudzi Worlarsi",
+    jobTitle: "Developer",
+    src: Teampic2
+},
+{
+    id: 2,
+    name: "Evans Nkuah Fayol",
+    jobTitle: "Director",
+    src: Teampic1
+}
+];
+
+export const VisaPrice = [
+    {
+        id: 1,
+        country: "COUNTRY",
+        price: "FEE"       
+    },
+    {
+        id: 2,
+        country: "South Africa",
+        price: "$140"       
+    },
+    {
+        id: 3,
+        country: "UAE - Dubai",
+        price: "$120"       
+    },
+    {
+        id: 4,
+        country: "Turkey",
+        price: "$150"       
+    },
+    {
+        id: 5,
+        country: "Kenya",
+        price: "$150"       
+    },
+    {
+        id: 6,
+        country: "UK",
+        price: "$300"       
+    },
+    {
+        id: 7,
+        country: "USA",
+        price: "$300" 
+    },
+    {
+        id: 6,
+        country: "Canada",
+        price: "$300"   
+    }
+]
+export const ContactText = [
+    {
+        id: 1,
+        title: "Location",
+        avenue: "45 Avenue, Coconut Street",
+        city: "Tema - Accre",
+        address: "GP 122-00-335"
+    },
+    {
+        id: 2,
+        title: "Email",
+        email: "info@spectartravel.com"
+    },
+    {
+        id: 3,
+        title: "Phone",
+        phone: "+233 000 000 000",
+        phone2: "+202 000 000 000",
+    }
 ]

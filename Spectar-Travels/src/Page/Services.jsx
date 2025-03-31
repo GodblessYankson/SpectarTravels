@@ -2,6 +2,9 @@ import React from 'react'
 import { TravelPlan, visaAssist, GroupTravel, FamilyVac, viewIcon, BussinesTravel, Servicespic } from '../assets'
 import { Link } from 'react-router-dom'
 import Navbar from '../Components/Navbar'
+import { Footerpic } from '../assets'
+import { FooterTop } from '../Components/FooterImg'
+import Footer from '../Components/Footer'
 
 
 
@@ -31,7 +34,7 @@ export const Services1 = (props) => {
       <div className='flex flex-col justify-center space-y-6'>
         <p  className='text-xl md:text-4xl font-bold'>{props.title}</p>
         <p className='text-lg md:text-xl font-semibold'>{props.content}</p>
-        <Link to="/tour" className="flex justify-between items-center px-2 py-4 border border-slate-500 rounded-full w-6/12 md:w-4/12 ">
+        <Link to="/booking" className="flex justify-between items-center px-2 py-4 border border-slate-500 rounded-full w-6/12 md:w-4/12 ">
                     <p className="font-semibold text-lg md:text-xl">Book Now</p>
                     <img src={viewIcon} alt="viewIcon" className="" />
                 
@@ -59,7 +62,7 @@ export const Services2 = (props) => {
      <div className='flex flex-col justify-center space-y-6'>
        <p  className='text-xl md:text-4xl font-bold'>{props.title}</p>
        <p className='text-lg md:text-xl font-semibold'>{props.content}</p>
-       <Link to="/tour" className="flex justify-between items-center px-2 py-4 border border-slate-500 rounded-full w-6/12 md:w-4/12">
+       <Link to="/booking" className="flex justify-between items-center px-2 py-4 border border-slate-500 rounded-full w-6/12 md:w-4/12">
                    <p className="font-semibold text-lg md:text-xl">Book Now</p>
                    <img src={viewIcon} alt="viewIcon" className="" />
                
@@ -93,6 +96,9 @@ const Services = () => {
    
    <Services2 title="Visa Assistance"  content="Navigating the visa application process can be daunting, especially when planning your travel abroad. At Spectar Travel, we provide comprehensive Visa Assistance Services to ensure you have everything you need for a smooth and hassle-free journey. Our expert team is dedicated to guiding you through the complex world of visa applications, allowing you to focus on your travel plans with confidence
     " img={visaAssist}/>
+    
+    <FooterTop img={Footerpic}  text="Enjoy the best travel experience now" />
+    <Footer />
 
     </div>
   )
